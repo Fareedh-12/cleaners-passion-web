@@ -1,4 +1,5 @@
 import { Footer } from "@/components/footer";
+import { ContactForm } from "@/components/contact-form";
 import { Navbar } from "@/components/navbar";
 import { SectionHeading } from "@/components/section-heading";
 
@@ -40,7 +41,7 @@ const trustPoints = [
   {
     title: "Locally Grounded",
     description:
-      "Serving Wallingford and Cholsey with a practical understanding of local homes and needs.",
+      "Serving the Oxfordshire area with a practical understanding of the homes, stays, and spaces that need dependable support.",
   },
   {
     title: "Thoughtful Standards",
@@ -206,7 +207,7 @@ export default function Home() {
           className="scroll-mt-32 mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12"
         >
           <div className="overflow-hidden rounded-[2rem] bg-[linear-gradient(135deg,_#17313d_0%,_#244b59_55%,_#3d6e73_100%)] px-6 py-10 text-white shadow-[0_30px_80px_rgba(23,49,61,0.25)] sm:px-8 sm:py-12 lg:px-12">
-            <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
+            <div className="grid gap-10 xl:grid-cols-[0.92fr_1.08fr] xl:items-start">
               <div className="max-w-2xl">
                 <p className="text-sm uppercase tracking-[0.35em] text-white/70">
                   Contact
@@ -215,23 +216,67 @@ export default function Home() {
                   Ready for a cleaner, fresher space?
                 </h2>
                 <p className="mt-4 text-lg leading-8 text-white/80">
-                  Tell us about your home, move, or one-off deep clean and we
-                  will help you find the right next step.
+                  Share a few details and we will help you figure out the right
+                  cleaning support for your home, property, or business space.
                 </p>
+
+                <div className="mt-8 grid gap-4 sm:grid-cols-3 xl:grid-cols-1">
+                  <a
+                    href="tel:03301335041"
+                    className="rounded-[1.5rem] border border-white/12 bg-white/10 px-5 py-4 transition hover:bg-white/14"
+                  >
+                    <p className="text-sm uppercase tracking-[0.24em] text-white/55">
+                      Call
+                    </p>
+                    <p className="mt-2 text-lg font-semibold text-white">
+                      0330-133-5041
+                    </p>
+                  </a>
+                  <a
+                    href="mailto:info@cleanerspassion.com"
+                    className="rounded-[1.5rem] border border-white/12 bg-white/10 px-5 py-4 transition hover:bg-white/14"
+                  >
+                    <p className="text-sm uppercase tracking-[0.24em] text-white/55">
+                      Email
+                    </p>
+                    <p className="mt-2 text-lg font-semibold text-white break-words">
+                      info@cleanerspassion.com
+                    </p>
+                  </a>
+                  <a
+                    href="https://wa.me/447455572643?text=Hi%20Cleaners%20Passion%2C%20I%27d%20like%20a%20cleaning%20quote."
+                    className="rounded-[1.5rem] border border-white/12 bg-white/10 px-5 py-4 transition hover:bg-white/14"
+                  >
+                    <p className="text-sm uppercase tracking-[0.24em] text-white/55">
+                      WhatsApp
+                    </p>
+                    <p className="mt-2 text-lg font-semibold text-white">
+                      +44 7455 572643
+                    </p>
+                  </a>
+                </div>
+
+                <div className="mt-6 rounded-[1.5rem] border border-dashed border-white/20 bg-white/8 px-5 py-4 text-sm leading-6 text-white/78">
+                  Prefer a quick reply? Leave the basics in the form and we can
+                  follow up with the right next step, or use phone, email, or
+                  WhatsApp if you would rather reach out directly.
+                </div>
               </div>
-              <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
-                <a
-                  href="tel:03301335041"
-                  className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-base font-semibold text-[var(--color-brand-deep)]"
-                >
-                  0330-133-5041
-                </a>
-                <a
-                  href="mailto:info@cleanerspassion.com"
-                  className="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 text-base font-semibold text-white"
-                >
-                  info@cleanerspassion.com
-                </a>
+
+              <div className="xl:pt-2">
+                <div className="rounded-[1.9rem] border border-white/15 bg-white/6 p-3 sm:p-4">
+                  <div className="mb-4 px-3 pt-2">
+                    <p className="text-sm uppercase tracking-[0.28em] text-white/60">
+                      Quick Enquiry
+                    </p>
+                    <p className="mt-2 max-w-xl text-sm leading-6 text-white/75">
+                      Best for quote requests, availability checks, Airbnb
+                      turnaround questions, and one-off commercial or home
+                      cleaning enquiries.
+                    </p>
+                  </div>
+                  <ContactForm />
+                </div>
               </div>
             </div>
             <div className="mt-8 grid gap-4 border-t border-white/15 pt-8 text-sm text-white/75 sm:grid-cols-3 sm:text-base">
