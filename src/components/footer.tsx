@@ -5,7 +5,7 @@ export function Footer() {
         <div>
           <p className="font-serif text-2xl text-slate-950">Cleaners Passion</p>
           <p className="mt-3 max-w-xl text-base leading-7 text-slate-600">
-            Modern cleaning support for homes in Wallingford and Cholsey, with
+            Modern cleaning support across the Oxfordshire area, with
             services shaped around the space you need refreshed.
           </p>
         </div>
@@ -19,7 +19,7 @@ export function Footer() {
           >
             info@cleanerspassion.com
           </a>
-          <p>Wallingford, Cholsey</p>
+          <p>Oxfordshire area</p>
           <p>Price negotiable</p>
         </div>
       </div>

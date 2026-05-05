@@ -18,7 +18,7 @@ export function Navbar() {
                 Cleaners Passion
               </p>
               <p className="mt-1 text-sm text-slate-600">
-                Wallingford & Cholsey
+                Oxfordshire area
               </p>
             </div>
           </a>

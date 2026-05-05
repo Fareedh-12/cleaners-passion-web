@@ -4,9 +4,14 @@ import { SectionHeading } from "@/components/section-heading";
 
 const services = [
   {
-    title: "Specialized Cleaning",
+    title: "Commercial Cleaning",
     description:
-      "Tailored support for spaces that need extra care, detail, and a dependable finishing touch.",
+      "Professional cleaning support for workplaces and business spaces that need a polished, dependable finish.",
+  },
+  {
+    title: "Airbnb Cleaning",
+    description:
+      "Reliable turnaround cleaning for short-stay properties, helping every guest arrive to a fresh and well-presented space.",
   },
   {
     title: "House Cleaning",
@@ -19,9 +24,9 @@ const services = [
       "Fresh starts made easier with thorough cleaning for tenants, landlords, and homeowners.",
   },
   {
-    title: "Deep Cleaning",
+    title: "Specialized Cleaning",
     description:
-      "An intensive refresh for kitchens, bathrooms, and overlooked corners that need more attention.",
+      "Tailored support for spaces that need extra care, detail, and a dependable finishing touch.",
   },
 ];
 
@@ -57,10 +62,10 @@ export default function Home() {
         <section className="relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(110,177,196,0.28),_transparent_32%),radial-gradient(circle_at_bottom_right,_rgba(180,207,197,0.45),_transparent_28%),linear-gradient(135deg,_#f6fbfd_0%,_#f4efe7_100%)]" />
           <div className="absolute inset-x-0 top-0 h-px bg-white/60" />
-          <div className="relative mx-auto grid min-h-[calc(100svh-5rem)] max-w-7xl gap-16 px-6 py-14 sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:px-12 lg:py-20">
-            <div className="max-w-2xl">
+          <div className="relative mx-auto grid min-h-[calc(100svh-5rem)] max-w-7xl gap-16 px-6 py-14 sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-start lg:px-12 lg:py-20">
+            <div className="max-w-2xl lg:pt-10">
               <div className="inline-flex items-center rounded-full border border-white/70 bg-white/75 px-4 py-2 text-sm font-medium text-slate-700 shadow-[0_12px_30px_rgba(16,24,40,0.08)] backdrop-blur">
-                Wallingford & Cholsey cleaning support
+                Oxfordshire area cleaning support
               </div>
               <h1 className="mt-6 max-w-3xl font-serif text-5xl leading-none tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">
                 Clean Homes,
@@ -101,7 +106,7 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className="relative">
+            <div className="relative lg:-mb-16">
               <div className="absolute inset-6 rounded-[2rem] bg-[linear-gradient(180deg,_rgba(110,177,196,0.22),_rgba(255,255,255,0))]" />
               <div className="relative overflow-hidden rounded-[2rem] border border-white/80 bg-white/90 p-6 shadow-[0_30px_80px_rgba(38,65,83,0.14)] backdrop-blur sm:p-8">
                 <div className="rounded-[1.5rem] bg-[var(--color-brand-deep)] p-6 text-white">
@@ -141,14 +146,14 @@ export default function Home() {
 
         <section
           id="services"
-          className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12"
+          className="scroll-mt-32 mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12"
         >
           <SectionHeading
             eyebrow="Services"
             title="Cleaning support designed around real homes"
             description="A focused set of services with enough flexibility to match your routine, move, or one-off reset."
           />
-          <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-5">
             {services.map((service) => (
               <article
                 key={service.title}
@@ -166,7 +171,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="why-us" className="border-y border-slate-200/80 bg-white">
+        <section
+          id="why-us"
+          className="scroll-mt-32 border-y border-slate-200/80 bg-white"
+        >
           <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 sm:px-8 lg:grid-cols-[0.85fr_1.15fr] lg:px-12">
             <div>
               <SectionHeading
@@ -195,7 +203,7 @@ export default function Home() {
 
         <section
           id="contact"
-          className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12"
+          className="scroll-mt-32 mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12"
         >
           <div className="overflow-hidden rounded-[2rem] bg-[linear-gradient(135deg,_#17313d_0%,_#244b59_55%,_#3d6e73_100%)] px-6 py-10 text-white shadow-[0_30px_80px_rgba(23,49,61,0.25)] sm:px-8 sm:py-12 lg:px-12">
             <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
@@ -227,8 +235,11 @@ export default function Home() {
               </div>
             </div>
             <div className="mt-8 grid gap-4 border-t border-white/15 pt-8 text-sm text-white/75 sm:grid-cols-3 sm:text-base">
-              <p>Based in Wallingford and Cholsey</p>
-              <p>House Cleaning, Deep Cleaning, Move In/Out, Specialized</p>
+              <p>Based in the Oxfordshire area</p>
+              <p>
+                Commercial Cleaning, Airbnb Cleaning, House Cleaning, Move
+                In/Out, Specialized
+              </p>
               <p>Price negotiable on enquiry</p>
             </div>
           </div>

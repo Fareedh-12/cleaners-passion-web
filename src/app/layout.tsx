@@ -2,9 +2,41 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://cleaners-passion-web.vercel.app"),
   title: "Cleaners Passion | Clean Homes, Happy Lives",
   description:
-    "Cleaners Passion offers house cleaning, deep cleaning, specialized cleaning, and move in/out cleaning in Wallingford and Cholsey.",
+    "Cleaners Passion offers commercial cleaning, Airbnb cleaning, house cleaning, move in/out cleaning, and specialized cleaning across the Oxfordshire area.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Cleaners Passion | Clean Homes, Happy Lives",
+    description:
+      "Trusted cleaning support across the Oxfordshire area, including commercial cleaning, Airbnb cleaning, house cleaning, move in/out cleaning, and specialized cleaning.",
+    url: "/",
+    siteName: "Cleaners Passion",
+    locale: "en_GB",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Cleaners Passion",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cleaners Passion | Clean Homes, Happy Lives",
+    description:
+      "Trusted cleaning support across the Oxfordshire area for commercial spaces, homes, Airbnb turnovers, move in/out cleaning, and specialized jobs.",
+    images: ["/og-image.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({

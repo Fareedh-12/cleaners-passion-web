@@ -1,0 +1,26 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#F6FBFD"/>
+  <rect width="1200" height="630" fill="url(#paint0_radial_1_4)"/>
+  <rect x="66" y="66" width="1068" height="498" rx="40" fill="#244B59"/>
+  <rect x="112" y="112" width="120" height="120" rx="28" fill="white"/>
+  <path d="M145 188V156H160.616C170.514 156 176 161.603 176 172C176 182.379 170.514 188 160.616 188H145ZM153.062 181.361H159.908C165.238 181.361 168.266 177.93 168.266 172C168.266 166.051 165.238 162.639 159.908 162.639H153.062V181.361Z" fill="#244B59"/>
+  <path d="M188 188V156H213.949V162.283H196.062V168.781H212.434V174.773H196.062V188H188Z" fill="#244B59"/>
+  <text x="112" y="316" fill="white" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="700">
+    Cleaners Passion
+  </text>
+  <text x="112" y="388" fill="#D9E6EB" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="34">
+    Clean Homes, Happy Lives
+  </text>
+  <text x="112" y="444" fill="#D9E6EB" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="28">
+    House Cleaning, Airbnb Cleaning, Deep Cleaning, Move In/Out Cleaning
+  </text>
+  <text x="112" y="492" fill="#D9E6EB" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="28">
+    Wallingford and Cholsey
+  </text>
+  <defs>
+    <radialGradient id="paint0_radial_1_4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(171 76) rotate(39.1818) scale(759.663 907.131)">
+      <stop stop-color="#C7E1E8"/>
+      <stop offset="1" stop-color="#F6FBFD"/>
+    </radialGradient>
+  </defs>
+</svg>
