@@ -257,9 +257,9 @@ export default function Home() {
                 </div>
 
                 <div className="mt-6 rounded-[1.5rem] border border-dashed border-white/20 bg-white/8 px-5 py-4 text-sm leading-6 text-white/78">
-                  The easiest path here is a simple enquiry form backed by
-                  Google Forms, with phone, email, and WhatsApp still available
-                  if someone would rather contact you directly.
+                  The easiest path here is a simple enquiry form, with a clean
+                  mobile handoff and phone, email, and WhatsApp still available
+                  for anyone who would rather contact you directly.
                 </div>
               </div>
 
@@ -272,7 +272,7 @@ export default function Home() {
                     <p className="mt-2 max-w-xl text-sm leading-6 text-white/75">
                       Best for quote requests, availability checks, Airbnb
                       turnaround questions, and one-off commercial or home
-                      cleaning enquiries.
+                      cleaning enquiries on both desktop and mobile.
                     </p>
                   </div>
                   <GoogleFormEmbed />
