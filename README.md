@@ -15,22 +15,22 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Contact Form Setup
 
-The enquiry form posts to the server-side route at `src/app/api/contact/route.ts` and sends email with Resend.
+The enquiry area uses an embedded Google Form inside the existing contact section layout.
 
-Create a local env file from `.env.example` and provide:
+The current Cleaners Passion form is already wired into the site.
+
+If you ever want to swap it later, you can override the default links with a local env file from `.env.example`:
 
 ```bash
-RESEND_API_KEY=
-CONTACT_TO_EMAIL=info@cleanerspassion.com
-CONTACT_FROM_EMAIL=Cleaners Passion <enquiries@your-verified-domain.com>
+GOOGLE_FORM_EMBED_URL=https://docs.google.com/forms/d/e/your-form-id/viewform?embedded=true
+GOOGLE_FORM_PUBLIC_URL=https://docs.google.com/forms/d/e/your-form-id/viewform
 ```
 
 Notes:
 
-- `RESEND_API_KEY` should come from your Resend account.
-- `CONTACT_TO_EMAIL` is the inbox that receives website enquiries.
-- `CONTACT_FROM_EMAIL` must use a sender address from a domain verified in Resend.
-- The sender secrets stay server-side only and are never exposed to the browser.
+- `GOOGLE_FORM_EMBED_URL` should be the embed URL that Google Forms gives you from the "Send" dialog.
+- `GOOGLE_FORM_PUBLIC_URL` is the standard share URL used for the fallback "open in new tab" link.
+- These values are not secrets, and they are only needed if you want to replace the currently embedded form without editing code.
 
 ## Scripts
 

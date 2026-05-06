@@ -1,5 +1,5 @@
 import { Footer } from "@/components/footer";
-import { ContactForm } from "@/components/contact-form";
+import { GoogleFormEmbed } from "@/components/google-form-embed";
 import { Navbar } from "@/components/navbar";
 import { SectionHeading } from "@/components/section-heading";
 
@@ -257,9 +257,9 @@ export default function Home() {
                 </div>
 
                 <div className="mt-6 rounded-[1.5rem] border border-dashed border-white/20 bg-white/8 px-5 py-4 text-sm leading-6 text-white/78">
-                  Prefer a quick reply? Leave the basics in the form and we can
-                  follow up with the right next step, or use phone, email, or
-                  WhatsApp if you would rather reach out directly.
+                  The easiest path here is a simple enquiry form backed by
+                  Google Forms, with phone, email, and WhatsApp still available
+                  if someone would rather contact you directly.
                 </div>
               </div>
 
@@ -275,7 +275,7 @@ export default function Home() {
                       cleaning enquiries.
                     </p>
                   </div>
-                  <ContactForm />
+                  <GoogleFormEmbed />
                 </div>
               </div>
             </div>
