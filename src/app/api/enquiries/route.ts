@@ -44,7 +44,7 @@ async function sendResendEmail(args: {
   const from = process.env.ENQUIRY_FROM_EMAIL;
 
   if (!apiKey || !from) {
-    return { configured: false, ok: false };
+    return { configured: false, ok: false, status: null, error: "Not configured" };
   }
 
   const response = await fetch("https://api.resend.com/emails", {
@@ -62,7 +62,24 @@ async function sendResendEmail(args: {
     }),
   });
 
-  return { configured: true, ok: response.ok };
+  const responseText = await response.text();
+
+  if (!response.ok) {
+    console.error("Resend email failed", {
+      status: response.status,
+      response: responseText,
+      to: args.to,
+      from,
+      subject: args.subject,
+    });
+  }
+
+  return {
+    configured: true,
+    ok: response.ok,
+    status: response.status,
+    error: response.ok ? null : responseText,
+  };
 }
 
 export async function POST(request: Request) {
