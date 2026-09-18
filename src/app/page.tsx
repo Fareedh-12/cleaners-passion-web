@@ -1,5 +1,5 @@
+import { EnquiryForm } from "@/components/enquiry-form";
 import { Footer } from "@/components/footer";
-import { GoogleFormEmbed } from "@/components/google-form-embed";
 import { Navbar } from "@/components/navbar";
 import { SectionHeading } from "@/components/section-heading";
 
@@ -257,9 +257,9 @@ export default function Home() {
                 </div>
 
                 <div className="mt-6 rounded-[1.5rem] border border-dashed border-white/20 bg-white/8 px-5 py-4 text-sm leading-6 text-white/78">
-                  The easiest path here is a simple enquiry form, with a clean
-                  mobile handoff and phone, email, and WhatsApp still available
-                  for anyone who would rather contact you directly.
+                  Submit the enquiry form and we will receive the details directly,
+                  while phone, email, and WhatsApp remain available for anyone who
+                  would rather contact us immediately.
                 </div>
               </div>
 
@@ -270,12 +270,11 @@ export default function Home() {
                       Quick Enquiry
                     </p>
                     <p className="mt-2 max-w-xl text-sm leading-6 text-white/75">
-                      Best for quote requests, availability checks, Airbnb
-                      turnaround questions, and one-off commercial or home
-                      cleaning enquiries on both desktop and mobile.
+                      Request a quote or check availability without leaving the
+                      Cleaners Passion website.
                     </p>
                   </div>
-                  <GoogleFormEmbed />
+                  <EnquiryForm />
                 </div>
               </div>
             </div>
