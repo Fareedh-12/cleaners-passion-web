@@ -151,6 +151,7 @@ export async function POST(request: Request) {
     `;
 
     const webhookUrl = process.env.ENQUIRY_WEBHOOK_URL;
+    const webhookSecret = process.env.ENQUIRY_WEBHOOK_SECRET;
 
     const [businessEmailResult, customerEmailResult, webhookResult] =
       await Promise.all([
@@ -165,11 +166,11 @@ export async function POST(request: Request) {
           subject: "We received your Cleaners Passion enquiry",
           html: customerHtml,
         }),
-        webhookUrl
+        webhookUrl && webhookSecret
           ? fetch(webhookUrl, {
               method: "POST",
               headers: { "Content-Type": "application/json" },
-              body: JSON.stringify(enquiry),
+              body: JSON.stringify({ ...enquiry, secret: webhookSecret }),
             }).then((response) => ({ configured: true, ok: response.ok }))
           : Promise.resolve({ configured: false, ok: false }),
       ]);
